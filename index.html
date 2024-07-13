@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Unlocker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: url('https://telegra.ph/file/444750ba4815bfa7c8fd7.jpg') no-repeat center center fixed; /* Replace with your image URL */
+            background-size: cover;
+        }
+        .container {
+            background-color:'green' (255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+        .container h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .container input[type="text"] {
+            width: 80%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 2px solid #007bff;
+            border-radius: 5px;
+            outline: none;
+            font-size: 16px;
+        }
+        .container input[type="text"]:focus {
+            border-color: #0056b3;
+        }
+        .container button {
+            padding: 12px 25px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .container button:hover {
+            background-color: #218838;
+        }
+        .hidden-link {
+            display: none;
+            margin-top: 20px;
+        }
+        .hidden-link a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+        .hidden-link a:hover {
+            text-decoration: underline;
+        }
+        .alert {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>UNLOCK DEXTER LINK</h2>
+        <input type="text" id="code" placeholder="Enter the code">
+        <button onclick="unlockLink()">Unlock</button>
+        <div id="hidden-link" class="hidden-link">
+            <a href="https://whatsapp.com/channel/0029Vag1WQFJf05dF0pQeU3u/160" target="_blank">VISIT LINK</a>
+        </div>
+        <div id="alert" class="alert">
+            Invalid code. Please try again.
+        </div>
+    </div>
+
+    <script>
+        function unlockLink() {
+            const codeInput = document.getElementById('code').value;
+            const hiddenLink = document.getElementById('hidden-link');
+            const alertBox = document.getElementById('alert');
+            const correctCode = "200704321"
+
+            if (codeInput === correctCode) {
+                hiddenLink.style.display = 'block';
+                alertBox.style.display = 'none';
+            } else {
+                alertBox.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
